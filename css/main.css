@@ -2,6 +2,16 @@ body{
   margin: 60px auto;
   width: 70%;
   }
+
+.section{
+  background:url(http://i67.tinypic.com/xfck0g.jpg);
+  background-position:bottom;
+  background-reppeat:no-repeat;
+  background-size:100% auto,cover;
+  height:100vh;
+  position:relative;
+  width:100%;
+}
   
 nav ul, nav footer ul{
   font-family: 'Quattrocento Sans', sans-serif;
