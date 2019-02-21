@@ -10,6 +10,12 @@ body{
   height:100vh;
   position:relative;
   width:100%;
+  padding:40px;
+  margin-top:-15px;
+}
+
+#about{
+  text-align:center;
 }
   
 nav ul, nav footer ul{
