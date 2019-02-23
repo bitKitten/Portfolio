@@ -1,24 +1,77 @@
+html{
+	scroll-behavior: smooth;
+}
+
 body{
-  width:100%
+  width:100%;
+}
+
+.animate-reveal{
+		opacity:0;
+		-webkit-animation: reveal 1s cubic-bezier(0, 1, 0.5,1) 1 normal forwards;
+		animation: reveal 1s cubic-bezier(0, 1, 0.5,1) 1 normal forwards;
+}
+
+.animate-second{
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+	-webkit-transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+	-webkit-transform: translateY(0);
+  }
 }
 
 .section{
-  background:url(http://i67.tinypic.com/xfck0g.jpg);
-  background-position:bottom;
-  background-reppeat:no-repeat;
-  background-size:100% auto,cover;
   height:100vh;
   position:relative;
   width:100%;
-  padding:40px;
-  margin-top:-15px;
   text-align:center;
-  color:#F0F8FF;
+}
+
+.mid{
+	padding:70px;
+}
+
+#about{
+  background:url("../images/about-background.png");
+  background-color:black;
+  background-attachment:fixed;
+  background-position:bottom;
+  background-repeat:no-repeat;
+  background-size:100% auto,cover;
+  color:#F0F8FF;	
+  margin-top:-15px;
+}
+
+#portfolio{
+    color:#EC407A;	
+}
+
+#icons img{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	transition: filter 1s ease-in-out;
+	width:150px;
+	height:150px;
+}
+
+#icons img:hover{
+	-webkit-filter: grayscale(0%);
+	filter:grayscale(0%);
 }
   
 nav ul, nav footer ul{
   font-family: 'Quattrocento Sans', sans-serif;
-  padding: 0px;
+  padding: 40px;
   list-style: none;
   font-weight: bold;
 }
@@ -59,4 +112,10 @@ ul.posts {
 
 ul.posts li {
   list-style: none;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  #about {
+    background-attachment: scroll;
+  }
 }
