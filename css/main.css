@@ -114,6 +114,58 @@ ul.posts li {
   list-style: none;
 }
 
+.form-style{
+	display:table;
+	background-color:#F5F5F5;
+	width:60%;
+	border-radius:10px;
+	padding:15px;
+}
+
+.form-style label{
+	text-align:left;
+	display:table-cell;
+	width:15%;
+	font-weight:bold;
+	color:#641f8c;
+}
+
+.form-inner{
+	display:table-row;
+}
+
+.form-style input[type=text],
+.form-style input[type=email]{
+	display:table-cell;
+	padding-left:5px;
+	margin:10px;
+	width:88%;
+	border-radius:3px;
+	box-shadow: 1px 1px 4px #EBEBEB;
+	-moz-box-shadow: 1px 1px 4px #EBEBEB;
+	-webkit-box-shadow: 1px 1px 4px #EBEBEB;
+}
+
+.form-style textarea{
+	width:88%;
+}
+
+.form-style input[type=submit]{
+	display:table-cell;
+	width:50%;
+	border:2px #641f8c solid;
+	border-radius:6px;
+	background-color:#641f8c;
+	color:white;
+	margin-top:15px;
+}
+
+.form-style input[type=submit]:hover{
+	background-color:white;
+	color:#8d19c9;
+	border:2px #8d19c9 solid;
+}
+
 @media only screen and (max-device-width: 1366px) {
   #about {
     background-attachment: scroll;
