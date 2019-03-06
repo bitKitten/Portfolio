@@ -174,4 +174,7 @@ ul.posts li {
   .form-style{
 	  width:100%;
   }
+    .form-style label{
+	  display:table-row;
+  }
 }
