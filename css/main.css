@@ -173,8 +173,11 @@ ul.posts li {
   }
   .form-style{
 	  width:100%;
+	  font-size:2em;
   }
     .form-style label{
 	  display:table-row;
+	  font-size:3em;
+	  
   }
 }
