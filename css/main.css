@@ -4,6 +4,7 @@ html{
 
 body{
   width:100%;
+  font-size:62.5%;
 }
 
 .animate-reveal{
@@ -166,8 +167,11 @@ ul.posts li {
 	border:2px #8d19c9 solid;
 }
 
-@media only screen and (max-device-width: 1366px) {
+@media only screen and (max-device-width: 480px) {
   #about {
     background-attachment: scroll;
+  }
+  .form-style{
+	  width:100%;
   }
 }
