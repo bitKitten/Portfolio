@@ -125,6 +125,7 @@ ul.posts li {
 
 .form-style label{
 	text-align:left;
+	vertical-align:middle;
 	display:table-cell;
 	width:15%;
 	font-weight:bold;
