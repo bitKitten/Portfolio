@@ -32,8 +32,6 @@ body{
 }
 
 .section{
-  height:100vh;
-  position:relative;
   width:100%;
   text-align:center;
 }
@@ -51,10 +49,12 @@ body{
   background-size:cover;
   color:#F0F8FF;	
   margin-top:-15px;
+  height:100vh;
 }
 
 #portfolio{
     color:#EC407A;	
+  position:relative;
 }
 
 #icons img{
